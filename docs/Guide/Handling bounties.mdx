@@ -11,14 +11,22 @@ import { IfcCard } from "../../src/components/Card/InfoCard";
 🦅
 We follow the steps to take the selected reward and claim the payment
 
-## 🤖 Bounty Bot
+## Bounty Bot & Take
 
 To interact with the bounty bot and manipulate its status, submit a comment containing only one of these commands:
 
 ### ::take
 
 🎨
-Assign yourself to the bounty. The due date of your assignment is the next 21st date UTC.
+To assign a bounty we will have to write `(::take)` in the comment box of the selected bounty.
+The due date of your assignment is the next 21st date UTC.
+
+<IfcCard icon={"🎁"} title={"Taked bounty successfully"}>
+  Hi,<b>YOUR_NAME</b>! Thanks for taking this bounty! The due date is <b>DATE_TIME</b>.
+</IfcCard>
+
+📜
+If you've received a comment like this... Congratulations, you just took this bounty.
 
 #### Requeriments:
 
@@ -95,24 +103,12 @@ Give up on this bounty.
 🌈
 After you’re done with the tasks, you need to submit an expense to IFC.js Open Collective.
 To ensure the authenticity of the expense, you need to tell us the invoice number via this command.
-Replace the **\_** with the invoice number (only the number).
+Replace the **\_\_\_\_** with the invoice number (only the number).
 
 #### Requeriments:
 
 - Sender: Assignee,
 - Status: Done
-
-## Take bounty
-
-🧶
-To assign a bounty we will have to write `(::take)` in the comment box of the selected bounty.
-
-<IfcCard icon={"🎁"} title={"Taked bounty successfully"}>
-  Hi,<b>YOUR_NAME</b>! Thanks for taking this bounty! The due date is <b>DATE_TIME</b>.
-</IfcCard>
-
-📜
-If you've received a comment like this... Congratulations, you just took this bounty.
 
 ## Create Pull Request
 
@@ -131,7 +127,7 @@ If you have to develop an example for the tutorial do it <a href="https://github
   After the PR is merged, this bounty`s status will automatically changed to done.
 </IfcCard>
 
-## Generate payment request
+## Generate Payment Request
 
 ⚡
 This step is done through `Open Collective` if you still do not have your user you can
